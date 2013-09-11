@@ -1,0 +1,70 @@
+canvas {
+  position: absolute;
+  left:580px;
+  top: 100px;
+  z-index: 10000;
+}
+
+img {
+  position: absolute;
+}
+
+.deck-container h1 {  
+  font-size: 3.2em !important;
+}
+
+div.demo-code {
+  width: 530px !important;
+}
+
+div.line-code{
+  width:503px !important;
+}
+
+div.bar-code{
+  width:500px !important;
+}
+
+div.pie-code {
+  width: 604px !important;
+}
+
+
+input[type='checkbox'].demo:before {
+  content: "";
+  display: inline-block;
+  width: 84px;
+  height: 26px;
+  background-image: url('pictures/off.png');
+  visibility: visible;
+}
+
+input[type='checkbox'].demo {
+  cursor: pointer;
+  position: absolute;
+  z-index: 10000;
+  display: inline-block;
+  width: 84px;
+  height: 26px;
+  visibility: hidden;
+}
+
+input[type='checkbox'].demo:checked:before {
+  background-image: url('pictures/on.png');
+}
+
+.deck-next-link, .deck-prev-link {
+  display: none !important;
+}
+
+.theme-menu{
+  display: none !important;
+}
+
+.deck-status{
+  display: none !important;
+}
+
+.legend_image{
+  border:2px solid #000;
+}
