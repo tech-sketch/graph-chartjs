@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./lib/underscore-min.js"></script>
+    <script type="text/javascript" src="./lib/Chart.js"></script>
+    <script type="text/javascript" src="./lib/jquery.csv-0.71.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/line_options.js"></script>
+    <script type="text/javascript" src="./js/pie_options.js"></script>
+    <script type="text/javascript" src="./js/flatBar_options.js"></script>
+    <link href="./css/main.css" rel="stylesheet" type="text/css"></link>
+    <title>chart.js サンプル </title>
+  </head>
+  <body>
+    <h3></h3>
+    <div id="canvas_area" style="height: 600px; width: 800;">
+      <canvas id="chart_area" height="600px" width="800px" style="position: absolute;"></canvas>
+    </div>
+    <div id="legend_area"  style="height: 400px; width: 200; position:absolute; top:30px; left:830px; ">
+      <div class="lgd_1" ><p>農林水産業</p></div>
+      <div class="lgd_2" ><p>鉱業</p></div>
+      <div class="lgd_3" ><p>製造業</p></div>
+      <div class="lgd_4" ><p>建設業</p></div>
+      <div class="lgd_5" ><p>電気・ガス・水道業</p></div>
+      <div class="lgd_6" ><p>卸売・小売業</p></div>
+      <div class="lgd_7" ><p>金融・保険業</p></div>
+      <div class="lgd_8" ><p>不動産業</p></div>
+      <div class="lgd_9" ><p>運輸・通信業</p></div>
+      <div class="lgd_10" ><p>サービス業</p></div>
+     </div>
+     <div id="button_area" style="height: 100px; width: 800px;">
+       <input type="range" id="range" class="range" value="0" min="0" max="29" step="1" style="width: 800px; height: 20px;"></input>
+       <input type="button" id="line"  value="折れ線グラフ" />
+       <input type="button" id="bar"  value="棒グラフ" />
+       <input type="button" id="pie"   value="パイチャート" />
+       <input type="button" id="start" value="再生" />
+       <input type="button" id="stop"  value="停止" />
+       <input type="button" id="back" value="戻る" onClick="location.href='http://backbone.orz.hm/infographics/konda/slide/chart_js/index.html#20'" />
+     </div>
+   </body>
+</html>
